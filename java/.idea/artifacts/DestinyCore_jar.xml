@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="DestinyCore:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/DestinyCore_jar</output-path>
-    <root id="archive" name="DestinyCore.jar">
-      <element id="module-output" name="DestinyCore" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/java/DestinyCore/lib/gson-2.7.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
