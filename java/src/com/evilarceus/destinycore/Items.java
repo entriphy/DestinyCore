@@ -20,7 +20,7 @@ public class Items {
 
     public static void main(String[] args) throws IOException {
         //Test code here
-        infoBox(hashToWeapon("1274330687"), "Result");
+        infoBox("The item is " + hashToWeapon("2882093969"), "Result");
     }
 
 
