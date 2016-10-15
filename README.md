@@ -1,0 +1,2 @@
+# DestinyCore
+API for BungieNetPlatform
