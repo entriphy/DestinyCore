@@ -16,7 +16,7 @@ import java.net.URL;
  */
 public class Items {
 
-    public static String apiKey = "Insert key here";
+
 
     public static void main(String[] args) throws IOException {
         //Test code here
@@ -24,7 +24,7 @@ public class Items {
     }
 
 
-    //Use this box to test... stuff
+    //Use this dialog box to test... stuff
     public static void infoBox(String infoMessage, String titleBar)
     {
         JOptionPane.showMessageDialog(null, infoMessage, "InfoBox: " + titleBar, JOptionPane.INFORMATION_MESSAGE);
@@ -37,7 +37,7 @@ public class Items {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
-        con.setRequestProperty("X-API-KEY", apiKey);
+        //con.setRequestProperty("X-API-KEY", apiKey);
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
@@ -55,7 +55,7 @@ public class Items {
         System.out.println(json.getAsJsonObject("Response").getAsJsonObject("data").getAsJsonObject("inventoryItem").get("itemName"));
         JsonElement result = json.getAsJsonObject("Response").getAsJsonObject("data").getAsJsonObject("inventoryItem").get("itemName");
 
-        return result.toString();
+        return result.toString().replaceAll("\"", "");
 
     }
 }
