@@ -261,7 +261,6 @@ paket-files/
 .fake/
 
 # JetBrains Rider
-.idea/
 *.sln.iml
 
 # CodeRush
@@ -273,3 +272,8 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+
+# IntelliJ IDEA
+
+java/.idea/workspace.xml
+java/out/
